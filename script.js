@@ -304,6 +304,29 @@ while(array.length>i){
     i++
 }*/
 
+//Comment Scopes
+/*var x = 23
+function childWorld(){
+    x = 20
+    console.log(x)
+    var x = 10
+    console.log(x)
+    a = 30
+}
+childWorld()
+console.log(x)
+console.log(a)*/
 
+//Comment Closure
 
+/*function bankBlance(taka){
+    var  ammount = taka
+    return function(){
+        return ammount
+    }
+    
+}
+console.log(bankBlance(10000)())
+const output = bankBlance(10000)
+console.log(output())*/
 
