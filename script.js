@@ -276,6 +276,33 @@ const newMy = {
 console.log(newMy.age())
 console.log(newMy["age"]())*/
 
+//Comment Break,Continue
+
+/*const arr = [1,2,"Shahariar",true]
+for(let i=0; i<arr.length; i++){
+    if( typeof arr[i] === "number")
+    continue;
+    console.log(arr[i])
+}
+const array = [1,2,"Shahariar",true]
+for(let i=0; i<array.length; i++){
+    if( typeof array[i] === "string")
+    break;
+    console.log(array[i])
+}
+const arra = [1,2,"Shahariar",true]
+for(let i=arra.length-1; i>=0; i--){
+    console.log(arra[i])
+}*/
+
+//Comment The while Loop
+
+/*const array = [1,2,"Shahariar",true]
+let i = 0
+while(array.length>i){
+    console.log(array[i])
+    i++
+}*/
 
 
 
