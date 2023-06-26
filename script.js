@@ -315,11 +315,11 @@ function childWorld(){
 }
 childWorld()
 console.log(x)
-console.log(a)*/
+console.log(a)
 
 //Comment Closure
 
-/*function bankBlance(taka){
+function bankBlance(taka){
     var  ammount = taka
     return function(){
         return ammount
@@ -328,5 +328,168 @@ console.log(a)*/
 }
 console.log(bankBlance(10000)())
 const output = bankBlance(10000)
-console.log(output())*/
+console.log(output())
 
+(function (){
+    console.log(5)
+})()
+
+//Comment Hoisting
+
+console.log(hoisting)
+var hoisting
+console.log(hoisting)
+
+// console.log(hoisting2)
+let hoisting2
+console.log(hoisting2)
+hoisting2 = "Babu"
+console.log(hoisting2)
+
+console.log(sum())
+function sum(){
+    return 2
+}
+
+// console.log(sum())
+// const sum = function(){
+//     return 0
+// }
+
+var language = 1
+function lan(){
+    language = "Java"
+    var language
+    console.log(language)
+}
+lan()*/
+
+//Comment Execution Stack
+
+/*var name = "Shahariar"
+function one(){
+        console.log(two())
+        return "One"
+}
+function two(){
+        console.log(three())
+        return "Two"
+}
+function three(){
+        return "Three"
+}
+console.log(one())*/
+
+//Comment Test
+/*let variable = "Babu"
+function babu(){
+    return function(){
+        return variable
+    }
+}
+console.log(babu()())*/
+
+//Comment This
+
+/*// function thisKey(){
+//     console.log(this)
+//     this.name = "Shahariar"
+//     this.roll = 2
+//     return {name,roll}
+// }
+// console.log(thisKey())
+
+// const one = {
+//         fun: ()=>{
+//         console.log(this)
+//         return ()=>console.log(this)
+//         }
+//     }
+// one.fun()()
+
+// 'use strict'
+// const two = {
+//         fun: function(){
+//         console.log(this)
+//         return function(){console.log(this)}
+//         }
+//     }
+// two.fun()()
+
+// const three = {
+//         fun: function(){
+//         console.log(this)
+//         return ()=>{console.log(this)}
+//         }
+//     }
+// three.fun()()
+
+// const four = {
+//         name: "Babu",
+//         fun: function(){
+//             console.log(this)
+//         },
+//         fun2: ()=>{
+//             console.log(this)
+//         }
+//     }
+// four.fun2()*/
+
+//Comment call(),bind(),apply()
+
+/*const newFun = {
+        name: 'Shahariar',
+        id: 182,
+        age:{
+            age: 25
+        },
+        obj1:{
+            year:23,
+            hello:{
+                look: "cool",
+                reply:function(a){   
+                console.log(this,a)
+                }
+            },
+            fun1:function(a){
+                console.log(this,a)
+            }
+        }
+        
+}
+const hi ={
+    name: "Babu"
+}
+// newFun.obj1.fun1.call(newFun,"Hi!")
+// newFun.obj1.fun1.apply(newFun,["Hi!"])
+// newFun.obj1.fun1.apply(hi,["Hi!"])
+// const bindMethod = newFun.obj1.fun1.bind(hi,"Hi!")
+// bindMethod()
+// newFun.obj1.hello.reply.call(obj1,"Hi")*/
+
+//Comment Primitive Data VS Object
+
+/*let a = 10
+let b = 20
+function swap1(x,y){
+    let temp = x
+    x = y
+    y = temp
+    console.log(x,y)
+}
+swap1(a,b)
+console.log(a,b)
+
+
+const obj = {
+    a : 10,
+    b : 20
+}
+function swap2(obj){
+    let temp = obj.a
+    obj.a = obj.b
+    obj.b = temp
+    console.log(obj.a,obj.b)
+}
+swap2(obj)
+console.log(obj.a,obj.b)*/
