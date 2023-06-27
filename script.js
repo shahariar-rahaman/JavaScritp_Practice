@@ -493,3 +493,103 @@ function swap2(obj){
 }
 swap2(obj)
 console.log(obj.a,obj.b)*/
+
+//Comment Prototype
+
+/*const arr = [2]
+console.log(arr.__proto__===Array.prototype)*/
+
+//Comment Wrapper Function
+
+// const num = new Number(2)
+// console.log(num)
+
+//Comment Function Constructor
+
+/*const Person = function(name,id,section){
+    this.name = name;
+    this.id = id;
+    this.section = section
+    this.age =function(year){
+        return 2023-year
+    } 
+}
+
+const shahariar = new Person("Shahariar", "182-15-2112", "A", 1997)
+const siflu = new Person("Siflu", "182-15-2111", "A")
+console.log(shahariar.name, shahariar.id, shahariar.section, shahariar.age(1997))
+console.log(siflu.name, siflu.id, siflu.section)*/
+
+/*const Person = function(school,college,university){
+            this.school = school;
+            this.college = college;
+            this.university = university
+}
+
+Person.prototype.age = function(year){
+        return 2023 - year
+}
+
+const shahariar = new Person("St. Josepsh", "Savar Model College", "Daffodil UV")
+console.log(shahariar.age(1997))
+console.log(shahariar.school, shahariar.college, shahariar.university)
+console.log(Person.prototype)*/
+
+/*const Client = function(name,age,school,college,uv){
+    Person.call(this,school,college,uv,age);
+    this.name = name;
+    // this.age = age
+}
+const ridoy = new Client("Ridoy", 26, "St. Josepsh", "Savar Model College", "Daffodil UV")
+console.log(ridoy.name, ridoy.age, ridoy.school, ridoy.college, ridoy.uv)*/
+
+//Comment IIFE
+
+/*(
+    function one(){
+        let msg = "Hi"
+        console.log(msg)
+    }
+)()
+
+{
+    var value1 = 10
+    var value2 = 20
+}
+console.log(value1, value2)
+
+{
+    let a = 10 
+    let b = 20
+}
+console.log(a, b)
+
+{
+    var one = function(){
+        var age = 23
+        //console.log(age)
+        return age
+    }
+}
+console.log(one())
+
+{
+    let two = function(){
+        let age = 23
+        //console.log(age)
+        return age
+    }
+}
+console.log(two())*/
+
+const str = "I'm Shahariar Rahaman Babu"
+console.log(str.startsWith("I"))
+
+const str2 = "I'm Shahariar Rahaman Babu"
+console.log(str.endsWith("u"))
+
+const str3 = "I'm Shahariar Rahaman Babu"
+console.log(str.includes("u"))
+
+const str4 = "I'm Shahariar Rahaman Babu"
+console.log(str.repeat(5))
