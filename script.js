@@ -582,7 +582,7 @@ console.log(one())
 }
 console.log(two())*/
 
-const str = "I'm Shahariar Rahaman Babu"
+/*const str = "I'm Shahariar Rahaman Babu"
 console.log(str.startsWith("I"))
 
 const str2 = "I'm Shahariar Rahaman Babu"
@@ -592,4 +592,129 @@ const str3 = "I'm Shahariar Rahaman Babu"
 console.log(str.includes("u"))
 
 const str4 = "I'm Shahariar Rahaman Babu"
-console.log(str.repeat(5))
+console.log(str.repeat(5))*/
+
+//Comment Arrow Function
+
+/*const fun1 = function(a){
+    return a
+}
+console.log(fun1("Always good!"))*/
+
+/*const fun2 = function(a){
+    return a
+}
+console.log(fun2("Always good!"))*/
+
+/*const arr = [1996, 1997, 1998, 1999, 2000]
+
+// function ageCalculate(a){
+//     return 2023-a
+// }
+
+// const age = arr.map(ageCalculate)
+
+// console.log(age)
+
+
+// const ageCalculate = function(a){
+//     return 2023-a
+// }
+
+// const age2 = arr.map(ageCalculate)
+
+// console.log(age2)*/
+
+//Comment Lexical this keyword
+
+/*// const lexical = {
+//     name: "Shahariar",
+//     roll: "182-15-2112",
+//     fun: function(){
+//         console.log(this)
+//         return ()=>{
+//             console.log(this)
+//         }
+//     }
+// }
+// lexical.fun()()
+
+// const lexical2 = {
+//     name: "Shahariar",
+//     roll: "182-15-2112",
+//     fun: ()=>{
+//         console.log(this)
+//         return ()=>{
+//             console.log(this)
+//         }
+//     }
+// }
+// lexical2.fun()()
+
+// const lexical3 = {
+//     name: "Shahariar",
+//     roll: "182-15-2112",
+//     fun: function(){
+//         console.log(this)
+//         return function(){
+//             console.log(this)
+//         }
+//     }
+// }
+// lexical3.fun()()*/
+
+//Comment Destructuring
+
+/*// const babu = ["Shahariar", 21, "Student"]
+// const [name,age,position] = babu
+// console.log(name)
+// console.log(age)
+// console.log(position)
+
+// const babu = {
+//     name: "Shahariar",
+//     age: 21,
+//     position: "Student"
+// }
+// const {name, age, position} = babu
+// console.log(name, age, position)
+
+// const babu = {
+//     name: "Shahariar",
+//     age: 21,
+//     position: "Student"
+// }
+// const {name:newName,age:newAge,position:newPosition} = babu
+// console.log(newName)
+
+const one = {
+    name: "Shahariar",
+    roll: "182-15-2112",
+    two: {
+        age: 23,
+        year: 1997,
+        three: {
+            nickName: "Babu",
+            position: "Unemployed",
+            four: {
+                loction: "Savar"
+            }
+        }
+    }
+}
+
+const {two:{three:{four:fourObj}}} = one
+console.log(fourObj)*/
+
+//Comment Array
+
+/*const numbers = [2,5,6,8]
+for(const arr of numbers){
+    console.log(arr)
+}
+const findNumber = number => number === 5
+const find = numbers.findIndex(findNumber)
+console.log(find)
+
+const find2 = numbers.findIndex(number => number === 8)
+console.log(find2)*/
