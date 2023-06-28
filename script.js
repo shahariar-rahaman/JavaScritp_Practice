@@ -710,11 +710,151 @@ console.log(fourObj)*/
 
 /*const numbers = [2,5,6,8]
 for(const arr of numbers){
-    console.log(arr)
-}
-const findNumber = number => number === 5
+    // console.log(arr)
+    if(arr == 5 )
+        break
+        console.log(arr)
+}*/
+/*const findNumber = number => number === 5
 const find = numbers.findIndex(findNumber)
 console.log(find)
 
 const find2 = numbers.findIndex(number => number === 8)
-console.log(find2)*/
+console.log(find2)
+
+console.log(numbers[find2])*/
+
+/*const numbers = [1,2,1,4,5,6]
+var number = numbers.map(function(item){
+
+    return item === 4
+})
+console.log(number)
+console.log(number.indexOf(true))
+console.log(numbers[number.indexOf(true)])*/
+
+//Comment Spread Operator
+
+// let numbers = [1,5,1,8,9,10,41,50]
+
+/*function spread(a,b,c,d,e,f,g,h){
+    return a+b+c+d+e+f+g+h
+}
+console.log(spread(...numbers))*/
+
+/*function spread(a,b,c,d,e,f,g,h){
+    console.log(a+b+c+d+e+f+g+h)
+}
+console.log(spread.apply(null,numbers))*/
+
+/*const zero = [0,11,...numbers]
+console.log(zero)
+
+const one = [...numbers,...zero]
+console.log(one)*/
+
+//Comment Rest Prameter
+
+// const arr = []
+
+/*function argumentsES5(){
+    for(let i=0; i<arguments.length;i++)
+    {
+        arr.push(arguments[i])
+    }
+    return arr
+}
+console.log(argumentsES5(1,2,5,6,8,7,3,4))*/
+
+
+/*function argumentsES6(...a){
+    for(let i=0; i<a.length;i++)
+    {
+        arr.push(a[i])
+    }
+    return arr
+}
+console.log(argumentsES6(1,2,5,6,8,7,3,4))*/
+
+/*const arrowFun = ()=>{
+    for(let i=0; i<arguments.length; i++){
+        console.log(argumnets[i])
+    }
+}
+arrowFun(1,2,3,5,6)*/ //ভুল দেখাবে। কারণ arrow function এ arguments object কাজ করে না।
+
+/*const fun = function(){
+    for(let i=0; i<arguments.length;i++){
+        console.log(arguments[i])
+    }
+}
+arrowFun(1,2,3,5,6)*/ //ভুল দেখাবে। কারণ function expression এ arguments object কাজ করে না।
+
+/*function argumentsES5(){
+    arguments.map(function(item) {
+        console.log(item)
+    })
+}
+argumentsES5(1,2,3,5,6)*/ //ভুল দেখাবে। কারণ  arguments object এ map function কাজ করে না।
+
+/*const fun = (...a)=>{
+    const rtn=a.map(items=> items)
+    return rtn
+}
+console.log(fun("Shahariar","Dhaka",1,2,3,4,5))*/
+
+/*function es5(){
+    const newArguments = Array.prototype.slice.call(arguments)
+    const mapArray = newArguments.map(item => item)
+    return mapArray
+}
+console.log(es5("Shahariar","Dhaka",1,2,3,4,5))*/
+
+/*const es6 = (name,age,...a)=> [name, age, a] // return object korle undefined dekhato.
+console.log(es6("Shahariar", 26, "Savar", "Dhaka", 1340))*/
+
+//Comment Default parameter
+
+/*function defaultParameter(name,age){
+    name? name = name : name = 'Sahariar'
+    age? age = age : age = 23
+    return [name,age]
+}
+console.log(defaultParameter("Babu",26))*/
+
+/*const defaultParameterES6 = (name="Shahariar", age=23)=> [name,age]
+console.log(defaultParameterES6("Babu", 26))*/
+
+/*function ConstructorES5(name, age){
+    name?name=name : name="Shahariar"
+    age?age=age : age=23
+    this.name = name
+    this.age = age
+}
+const person = new ConstructorES5("Babu", 26)
+console.log(person.name, person.age)*/
+
+/*const ConstructorES6 = (name="Shahariar", age=23) =>{
+    this.name = name
+    this.age = age
+}
+const person2 = new ConstructorES5("Rahaman", 29)
+console.log(person2.name, person2.age)*/
+
+//Comment Map
+
+/*const mapDataStructure = new Map()
+mapDataStructure.set('fristName', 'Shahariar')
+mapDataStructure.set('lastName', 'Rahaman')
+mapDataStructure.set('age', 26)
+console.log(mapDataStructure)
+console.log(mapDataStructure.has("fristName"))
+console.log(mapDataStructure.delete("fristName"))
+console.log(mapDataStructure)
+console.log(mapDataStructure.size)
+mapDataStructure.forEach((value,key)=>console.log(`${value} ${key}`))
+for(let [key, value] of mapDataStructure.entries()){
+    console.log(`${key} ${value}`)
+}
+mapDataStructure.clear()
+console.log(mapDataStructure)*/
